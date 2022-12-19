@@ -51,6 +51,8 @@ def test_search_issue_positive():
 
 @allure.step("Открываем главную страницу")
 def open_main_page():
+    browser.config.window_height = 1920
+    browser.config.window_width = 1620
     browser.open("https://github.com")
 
 

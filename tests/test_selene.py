@@ -5,6 +5,8 @@ from selene.support.shared.jquery_style import s
 
 
 def test_github():
+    browser.config.window_height = 1920
+    browser.config.window_width = 1620
     browser.open("https://github.com")
 
     s(".header-search-input").click()
