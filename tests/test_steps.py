@@ -8,6 +8,7 @@ from selene.support.shared.jquery_style import s
 def test_dynamic_steps():
     browser.config.window_height = 1920
     browser.config.window_width = 1620
+
     with allure.step("Открываем главную страницу"):
         browser.open("https://github.com")
 
